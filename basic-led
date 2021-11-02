@@ -1,0 +1,7 @@
+import machine
+import utime
+
+from machine import pin
+pin.25 = led
+
+led.value(1)
