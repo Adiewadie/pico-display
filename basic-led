@@ -1,7 +1,11 @@
 import machine
 import utime
 
-from machine import pin
-pin.25 = led
+led = machine.Pin(25, machine.Pin.OUT)
 
-led.value(1)
+while True:
+    led.toggle()
+# here is where you can change the value to turn the led on or off with led.value(1) for on and led.value(0) for off    
+    
+    
+ 
